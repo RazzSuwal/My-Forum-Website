@@ -1,0 +1,135 @@
+#row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px 30px 30px 30px;
+    padding: 0px 100px 10px 175px;
+    /* border: 2px solid red; */
+}
+
+
+.heading {
+    text-align: center;
+    margin-top:15px;
+}
+
+#codeimg {
+    height: 460px;
+    width: 100%;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    margin-bottom: 10%;
+}
+#container::before{
+    content: "";
+    background: url("../image/coding1.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+.s_description{
+    text-align: center;
+    margin: 150px 0px 90px 0px;
+    color: purple;
+    display: block;
+    font-size: 36px; 
+}
+
+.s_description span:hover{
+    color: black;
+     
+}
+
+/* inside php loop css */
+.bootn{
+    font-size: 14px;
+    background-color: purple;
+    padding: 2px;
+    color: white;
+    margin: 5px;
+}
+.card{
+    margin:50px;
+    border: 2px solid green;
+    text-align: center;
+    width: 20%;
+    /* // height: 40%;
+    // color: white; */
+}
+#cardimg{
+    width: 200px;
+    height: 180px;
+}
+p{
+    padding: 4px;
+    background-color: cream;
+}
+#f_contion{
+    background-color: rgb(109, 109, 109);
+    height: 300px;
+    margin: 0px 5px;
+    padding: 5px;
+
+}
+#f_contion2{
+    background-color: rgb(54, 54, 54);
+    height: 30px;
+    /* border: 2px solid rgb(54, 54, 54); */
+    width: 40%;
+    /* width: 80%; */
+    
+
+}
+#f_contion3{
+    /* background-color: rgb(39, 38, 38); */
+    height: 290px;
+    width: 98%;
+    margin: 5px 0px 5px 5px;
+    border: 2px solid rgb(54, 54, 54);
+    /* padding: 5px; */
+
+}
+
+.bar{
+    /* background-color: rgb(39, 38, 38); */
+    height: 290px;
+    width: 50px;
+    margin: 5px 0px 5px 5px;
+    border: 2px solid rgb(109, 109, 109);
+    /* padding: 5px; */
+
+}
+
+
+@media only screen and (max-width: 600px){
+    #row{
+        margin: 10px;
+        padding: 5px;
+    }
+    .card{
+        width: 100%;
+    }
+    p{
+        font-size: 19px;
+    }
+    h2 a, .heading{
+        font-size: 25px;
+    }
+    .bootn {
+        font-size: 16px;
+
+    }
+    
+}
+
+
+
+
+

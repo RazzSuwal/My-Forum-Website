@@ -1,0 +1,39 @@
+#myform{
+    min-height: 76.8vh;
+    display: inline-block;
+    margin: 5% 35%;
+}
+.form1{
+    border: 2px solid forestgreen;
+    border-radius: 30px;
+    margin-top: 50px;
+    padding: 8px;
+}
+
+
+label {
+    font-size: 22px;
+
+}
+
+small {
+    font-size: 10px;
+    margin-left: 180px;
+    color: red;
+}
+.san{
+    margin-left: 100px;
+}
+
+.buttom{
+    background: darkgreen;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+    margin: 7px;
+    border-radius: 14px;
+}
+
+.buttom:hover {
+    background: white;
+}

@@ -1,0 +1,33 @@
+.container{
+    min-height: 97.3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color{
+    margin: 20px;
+    padding: 15px;
+    background-color: rgb(190, 187, 187);
+}
+
+.a-primary{
+    border: none;
+    padding: 0;
+    
+}
+.a-primary:hover{
+    text-decoration: underline ;
+    
+}
+.p-primary{
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        align-items: end;
+        justify-content: end;
+    }
+}

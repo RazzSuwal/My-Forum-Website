@@ -1,0 +1,175 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgb(112, 110, 110); */
+    height: 45px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    /* border-bottom:2px solid rgb(112, 110, 110) ; */
+}
+#navbar::before{
+    content: "";
+    background:rgb(112, 110, 110);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+a {
+    padding: 13px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    border-right: 2px solid black;
+
+
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 20px;
+    border-right: 2px solid black;
+    outline: none;
+    color: black;
+    padding: 10px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+#navbar a:hover,
+.dropdown:hover {
+    background-color: purple;
+    color: white;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: darkgrey;
+    min-width: 60px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin: 0px;
+    font-size: 15px;
+}
+
+/* Show the dropdown menu on hover */
+/* .dropdown:hover .dropdown-content {
+    display: block;
+} */
+
+.show {
+    display: block;
+}
+
+#left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* float: left; */
+    right: 0;
+    position: fixed;
+    /* position: absolute; */
+    height: 42px;
+    margin-right: 10px;
+}
+
+.myclass {
+    color: rgb(45, 207, 45);
+    border: 2px solid rgb(45, 207, 45);
+    border-radius: 5px;
+    margin: 8px;
+    padding: 6px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#left button {
+    background-color: green;
+    /* border: 2px solid green; */
+    border-radius: 5px;
+    margin-left: -7px;
+    cursor: pointer;
+}
+
+#left button:hover {
+    background-color: white;
+}
+
+.yu {
+    margin: 8px;
+    padding: 6px;
+    font-size: 15px;
+    text-align: center;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.h4{
+    color: white;
+}
+
+@media only screen and (max-width: 600px){
+    /* <meta name="viewport" content="width=1000; user-scalable=0;" /> */
+
+    #navbar{
+        width:100%;
+        top:41px;
+        margin: 0;
+        border-top: 2px solid black ;
+    }
+    #navbar a {
+        font-size: 19px;
+        padding: 13px 3px;
+    }
+    .dropdown .dropbtn{
+        padding: 13px 3px;
+        font-size: 18px;
+    }
+   
+    #searchform{
+        width:120px;
+        
+    }
+    #left{
+        background-color: rgb(112, 110, 110);
+        /* width: 100%; */
+        margin: 0;
+        left: 0;
+        padding: 0;
+    }
+    .h4{
+        display: none;
+    }
+}
